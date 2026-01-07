@@ -18,7 +18,7 @@ form.addEventListener('submit', function (e) {
     console.log(`value is invalid`);
     results.innerHTML = `weight and height is invalid`;
   } else {
-    const value = weight / ((height * height) / 100).toFixed(2);
+    const value = weight / ((height * height) / 10000).toFixed(2);
     results.innerHTML = `${value}`;
 
     if (value < 18.6) {
